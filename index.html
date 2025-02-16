@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 🎵 Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="music.mpeg" type="audio/mp3">
+    </audio>
+
+    <!-- 🎈 Floating Balloons -->
+    <div class="balloon-container">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+    </div>
+
+    <div class="card">
+        <!-- 🎉 Happy Birthday Message -->
+        <h1 id="birthdayTitle">🎉 Happy Birthday, SANDHYA! 🎂</h1>
+
+        <!-- 📸 Hidden Slideshow (Revealed on Click) -->
+        <div class="slideshow-container" id="slideshow-container">
+            <div class="slide fade">
+                <img src="photo1.jpeg" class="slide-img">
+                <p class="quote">"May your day be filled with joy and laughter!"</p>
+            </div>
+            <div class="slide fade">
+                <img src="photo2.jpeg" class="slide-img">
+                <p class="quote">"Wishing you endless happiness and success!"</p>
+            </div>
+            <div class="slide fade">
+                <img src="photo3.jpeg" class="slide-img">
+                <p class="quote">"You are a star, shine brighter every year!"</p>
+            </div>
+        </div>
+
+        <!-- 🎂 Button -->
+        <button onclick="openCard()">Open Surprise</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
